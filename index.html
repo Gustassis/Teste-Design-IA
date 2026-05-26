@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nutrologia | Instituto Dela</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&family=Raleway:wght@300;400;500;600&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "outline": "#82746d",
+                        "on-secondary-container": "#626751",
+                        "on-primary-fixed": "#2d1606",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#fffefc",
+                        "secondary-fixed": "#e0e5ca",
+                        "surface-container": "#f8f3ed",
+                        "secondary": "#5c614c",
+                        "on-tertiary-fixed": "#34100f",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed-variant": "#444935",
+                        "primary-container": "#a68574",
+                        "on-surface-variant": "#6b5c54",
+                        "on-surface": "#2d2926",
+                        "surface": "#fffcf9",
+                        "primary-fixed-dim": "#eabda3",
+                        "tertiary-container": "#98615e",
+                        "primary-fixed": "#ffdbc8",
+                        "outline-variant": "#e5dcd8",
+                        "on-tertiary-container": "#fff1f0",
+                        "secondary-container": "#e0e5ca",
+                        "surface-tint": "#795742",
+                        "primary": "#71503b",
+                        "tertiary-fixed": "#ffdad7",
+                        "surface-container-highest": "#f2e9e4",
+                        "inverse-on-surface": "#f8f0e4",
+                        "surface-dim": "#f2ede8",
+                        "on-background": "#1e1b14",
+                        "inverse-primary": "#eabda3",
+                        "surface-container-low": "#fdf7f2",
+                        "on-tertiary-fixed-variant": "#693a37",
+                        "on-primary-container": "#fff2ec",
+                        "background": "#fffcf9",
+                        "secondary-fixed-dim": "#c4c9af",
+                        "tertiary": "#7c4947",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#343029",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#f4ede8",
+                        "on-tertiary": "#ffffff",
+                        "surface-container-high": "#f5ece5",
+                        "tertiary-fixed-dim": "#f9b6b2",
+                        "on-secondary-fixed": "#191d0d",
+                        "on-primary-fixed-variant": "#5f402c",
+                        "surface-container-lowest": "#ffffff",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "brand-pink": "#e8d5d4",
+                        "brand-rose": "#d6b2b2"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "2rem",
+                        "full": "9999px"
+                    },
+                    spacing: {
+                        "margin-mobile": "20px",
+                        "gutter": "32px",
+                        "stack-sm": "12px",
+                        "stack-md": "32px",
+                        "container-max-width": "1100px",
+                        "stack-lg": "64px",
+                        "section-lg": "112px"
+                    },
+                    fontFamily: {
+                        "display-lg": ["Montserrat Alternates", "sans-serif"],
+                        "headline-md": ["Montserrat Alternates", "sans-serif"],
+                        "label-md": ["Raleway", "sans-serif"],
+                        "body-md": ["Raleway", "sans-serif"],
+                        "body-lg": ["Raleway", "sans-serif"]
+                    },
+                    fontSize: {
+                        "body-md": ["17px", "26px"],
+                        "body-lg": ["20px", "30px"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(255, 252, 249, 0.95) 40%, rgba(255, 252, 249, 0.2) 100%);
+        }
+        .text-balance {
+            text-wrap: balance;
+        }
+        .soft-shadow {
+            box-shadow: 0 4px 30px rgba(113, 80, 59, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-brand-pink selection:text-primary">
+
+<!-- Section 1: Hero -->
+<section class="relative min-h-[90vh] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Mulher radiante e saudável" class="w-full h-full object-cover object-center md:object-[70%_center]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDafDdbTPjhqlxNrdC-J5vA3_qDMNXQVHO4uRv1pNxl90mqQEnvI7Kk3mF8N2DOCAR1QdKmSuFvPYUozNRRGVF3cgPbu_B6kuVZPSADmC4eIuaUg9T5NVgfSUOgXA0kgT13x5yhbg3qTvLRi_Vw_7sa-yVAudnM3LqGULYSzf6BxPqWlC1-sidCen8KtikIEksaaFcl2VevjrYQjfqjDmG3r-itNjsTjukUyUwQmDd55zyD9CYGXUMLxg8BXBB8Kdw1Dtbz-iTfvmL-"/>
+<div class="absolute inset-0 hero-overlay"></div>
+</div>
+<div class="relative z-10 max-w-container-max-width mx-auto px-margin-mobile md:px-gutter w-full">
+<div class="max-w-2xl">
+<span class="inline-block px-5 py-1.5 rounded-full bg-brand-pink/50 text-primary font-label-md text-[10px] tracking-[0.2em] uppercase mb-8">Especialidade</span>
+<h1 class="font-display-lg text-5xl md:text-7xl text-primary font-medium mb-8 tracking-tight">
+                Nutrologia
+            </h1>
+<p class="font-body-lg text-on-surface-variant mb-12 max-w-lg">
+                Cuidado médico especializado para o equilíbrio metabólico e hormonal da mulher.
+            </p>
+<div class="flex flex-col sm:flex-row gap-5">
+<button class="bg-primary text-on-primary font-label-md py-5 px-12 rounded-lg hover:bg-primary-container transition-all soft-shadow uppercase text-[11px] tracking-[0.15em] font-semibold">
+                    Agendar consulta
+                </button>
+<button class="flex items-center justify-center gap-3 border border-outline/30 text-primary font-label-md py-5 px-12 rounded-lg hover:bg-surface-container-low transition-all uppercase text-[11px] tracking-[0.15em] font-semibold">
+<span class="material-symbols-outlined text-lg">chat</span>
+                    Falar no WhatsApp
+                </button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Section 2: Introdução -->
+<section class="py-section-lg bg-surface">
+<div class="max-w-[760px] mx-auto px-margin-mobile text-center">
+<span class="material-symbols-outlined text-brand-rose text-4xl mb-6">eco</span>
+<h2 class="font-display-lg text-3xl md:text-4xl text-primary mb-10 font-medium">Saúde que floresce de dentro</h2>
+<div class="space-y-8 font-body-lg text-on-surface-variant leading-relaxed">
+<p>
+                A Nutrologia é a especialidade médica que se dedica ao cuidado do metabolismo humano, com ênfase especial no estudo dos nutrientes e de seus impactos sobre o funcionamento do organismo ao longo da vida.
+            </p>
+<p>
+                Aqui no Instituto Dela, o foco é entender o que está impedindo o organismo de responder bem e construir um caminho claro para recuperar saúde, disposição e bem-estar.
+            </p>
+</div>
+</div>
+</section>
+
+<!-- Section 3: Nutrologia no Instituto Dela -->
+<section class="py-section-lg bg-surface-container-low">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-gutter">
+<div class="max-w-3xl mx-auto mb-16 text-center">
+<h2 class="font-display-lg text-3xl text-primary mb-6 font-medium">Nutrologia no Instituto Dela</h2>
+<p class="font-body-md text-on-surface-variant leading-relaxed">
+                A Nutrologia, por ser especialidade médica, não se limita aos nutrientes, e faz parte do cuidado do organismo como um todo. Ela acompanha metabolismo, hormônios e marcadores de saúde que influenciam energia, vitalidade, qualidade e quantidade de vida, composição corporal e bem-estar.
+            </p>
+</div>
+<div class="mb-20">
+<div class="aspect-video w-full rounded-xl overflow-hidden soft-shadow">
+<img alt="Interior sofisticado e sereno da clínica" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkcnbG3KnTa29JbwuL0WzWJqlFgplmy_YtFXh1H2jE2YgkeFzBdKeyCQf-i9CL57RVanWT4_DFnqAPp0JdpPpXTIoD6JT1FKf_PWALH_2RJVhnkrxhQNh_7K50OrYdOuRIazmR1MkDe1BloLDsc_WRsBFKqLMJs_OT3VgETjnfRX8zBoVG_dSfOE-bxHLQP35W-NmdQH-TXnzG8exi0NMY2Kyh35tFlzA9S5PyppnA7mBmvAaEeeuh99SEoHNpnbUCAROJVUj1R5Lf"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-start">
+<div>
+<h3 class="font-display-lg text-2xl text-primary mb-6">Um acompanhamento mais consciente</h3>
+<p class="font-body-md text-on-surface-variant leading-relaxed mb-8">
+                    No Instituto Dela, a consulta com o nutrólogo não está ligada apenas a sintomas ou queixas pontuais. Ela faz parte de um acompanhamento mais consciente da saúde, seja para prevenir desequilíbrios, atravessar fases de mudança ou entender melhor como o corpo está respondendo.
+                </p>
+<button class="text-primary font-label-md flex items-center gap-3 hover:gap-5 transition-all uppercase text-[11px] tracking-widest font-bold group">
+                    Quero saber mais sobre a consulta
+                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="bg-surface-container-highest/50 p-10 rounded-xl border border-outline-variant/40">
+<p class="font-body-md text-on-surface-variant mb-6 text-sm">A Nutrologia pode estar presente em diferentes momentos, como:</p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-rose mt-1">auto_awesome</span>
+<div>
+<span class="font-headline-md text-lg text-primary block mb-1">Metabolismo e Composição Corporal</span>
+<span class="font-body-md text-on-surface-variant text-sm block">Acompanhamento do metabolismo e da composição corporal.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-rose mt-1">wb_sunny</span>
+<div>
+<span class="font-headline-md text-lg text-primary block mb-1">Transições Hormonais</span>
+<span class="font-body-md text-on-surface-variant text-sm block">Cuidado especializado nas transições hormonais da mulher.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-rose mt-1">favorite</span>
+<div>
+<span class="font-headline-md text-lg text-primary block mb-1">Energia, Força e Vitalidade</span>
+<span class="font-body-md text-on-surface-variant text-sm block">Manutenção de energia, força e vitalidade ao longo da vida.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-rose mt-1">monitoring</span>
+<div>
+<span class="font-headline-md text-lg text-primary block mb-1">Prevenção Metabólica</span>
+<span class="font-body-md text-on-surface-variant text-sm block">Prevenção e monitoramento de alterações metabólicas.</span>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-brand-rose mt-1">calendar_month</span>
+<div>
+<span class="font-headline-md text-lg text-primary block mb-1">Saúde a Longo Prazo</span>
+<span class="font-body-md text-on-surface-variant text-sm block">Apoio médico em decisões sobre saúde a médio e longo prazo.</span>
+</div>
+</li>
+</ul>
+<p class="font-body-md text-on-surface-variant text-sm mt-6 pt-6 border-t border-outline-variant/30">Tudo isso com avaliação clínica, exames e acompanhamento médico contínuo.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Section 4: Como funciona a consulta -->
+<section class="py-section-lg bg-surface">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-gutter">
+<div class="text-center mb-20">
+<h2 class="font-display-lg text-3xl md:text-4xl text-primary mb-4 font-medium">Como funciona a consulta</h2>
+<p class="font-body-md text-on-surface-variant max-w-xl mx-auto">Um percurso estruturado e transparente para acolher sua singularidade em cada etapa.</p>
+</div>
+<div class="max-w-4xl mx-auto">
+<div class="space-y-4">
+<div class="group bg-surface-container-low border border-outline-variant/30 rounded-lg p-8 flex flex-col md:flex-row gap-8 items-start hover:border-brand-rose/50 transition-colors">
+<div class="flex-shrink-0 w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary font-display-lg text-2xl soft-shadow">01</div>
+<div>
+<h3 class="font-display-lg text-xl text-primary mb-3">Avaliação Clínica</h3>
+<p class="font-body-md text-on-surface-variant">A consulta começa com uma escuta cuidadosa. Histórico de saúde, sintomas, rotina, exames anteriores e objetivos ajudam a entender como o seu corpo está funcionando hoje.</p>
+</div>
+</div>
+<div class="group bg-surface-container-low border border-outline-variant/30 rounded-lg p-8 flex flex-col md:flex-row gap-8 items-start hover:border-brand-rose/50 transition-colors">
+<div class="flex-shrink-0 w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary font-display-lg text-2xl soft-shadow">02</div>
+<div>
+<h3 class="font-display-lg text-xl text-primary mb-3">Investigação Metabólica e Hormonal</h3>
+<p class="font-body-md text-on-surface-variant">Quando indicado, são solicitados exames laboratoriais para avaliar metabolismo, hormônios, deficiências e outros marcadores importantes para a saúde.</p>
+</div>
+</div>
+<div class="group bg-surface-container-low border border-outline-variant/30 rounded-lg p-8 flex flex-col md:flex-row gap-8 items-start hover:border-brand-rose/50 transition-colors">
+<div class="flex-shrink-0 w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary font-display-lg text-2xl soft-shadow">03</div>
+<div>
+<h3 class="font-display-lg text-xl text-primary mb-3">Definição do Cuidado</h3>
+<p class="font-body-md text-on-surface-variant">A partir da avaliação clínica e dos exames, o nutrólogo orienta condutas médicas adequadas ao seu momento. Isso pode incluir suplementação, ajustes hormonais e encaminhamentos necessários para um cuidado mais preciso.</p>
+</div>
+</div>
+<div class="group bg-surface-container-low border border-outline-variant/30 rounded-lg p-8 flex flex-col md:flex-row gap-8 items-start hover:border-brand-rose/50 transition-colors">
+<div class="flex-shrink-0 w-16 h-16 rounded-full bg-white flex items-center justify-center text-primary font-display-lg text-2xl soft-shadow">04</div>
+<div>
+<h3 class="font-display-lg text-xl text-primary mb-3">Acompanhamento ao Longo do Tempo</h3>
+<p class="font-body-md text-on-surface-variant">O cuidado não termina na primeira consulta. Os retornos servem para acompanhar respostas do organismo, ajustar condutas e garantir que a evolução aconteça de forma segura e consistente.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Section 5: Responsável Técnico -->
+<section class="py-section-lg bg-surface-dim">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-gutter">
+<div class="flex flex-col md:flex-row gap-16 items-center">
+<div class="w-full md:w-1/3">
+<div class="relative">
+<div class="absolute -inset-6 bg-brand-pink/20 rounded-full blur-3xl"></div>
+<img alt="Dr. Paulo Gusmão" class="relative z-10 w-full aspect-[4/5] object-cover rounded-xl soft-shadow" src="https://lh3.googleusercontent.com/aida/ADBb0uhhbMk2IHMtASyA_Pj-OEw0LpZit5cmugqgRK4NjSXv0UNiXe4E2cI7xJ8gmv3sPx_MkbI222cHbdx4nucFtcYeaYMLmPDh91i-p1OQ5T7qKvXeHguozrO922FnTGtRIx8vKn8I5-PnEosnogrhZgzR7WHGyw-oKC05sh8VxA3JPDki9TdkcbF5EheYzqD9W_BXhEuTqXXSxqiLAzmJwbXIrz-mDDME8s2EJtbqcKvfRVIFch0h7p5uJ43H"/>
+</div>
+</div>
+<div class="w-full md:w-2/3">
+<span class="font-label-md text-primary uppercase tracking-[0.2em] text-[10px] mb-4 block font-semibold">Responsável Técnico</span>
+<h2 class="font-display-lg text-4xl text-primary mb-2 font-medium">Dr. Paulo Gusmão</h2>
+<p class="font-body-md text-on-surface-variant/60 text-sm mb-8">CRM 52538650 | Médico Nutrólogo | Fundador do Instituto Dela</p>
+<div class="font-body-lg text-on-surface-variant space-y-6 mb-10 leading-relaxed">
+<p>
+                        Dr. Paulo Gusmão é médico nutrólogo e fundador do Instituto Dela. Sua atuação é voltada para o cuidado da saúde da mulher ao longo da vida, com foco no metabolismo, no equilíbrio hormonal e no funcionamento global do organismo.
+                    </p>
+<p>
+                        A partir de uma investigação clínica cuidadosa, exames e medicina baseada em evidência, conduz o acompanhamento de forma clara e responsável, sem promessas vazias ou abordagens padronizadas. A escuta atenta faz parte do processo, para que cada decisão médica esteja alinhada ao momento e às necessidades de cada mulher.
+                    </p>
+<p>
+                        Com experiência no manejo de disfunções metabólicas, acompanhamento hormonal, perimenopausa e menopausa, Dr. Paulo sustenta a visão que estrutura o Instituto Dela: oferecer cuidado eficiente, bem fundamentado e com continuidade, para que a mulher compreenda o próprio corpo e faça escolhas mais seguras sobre sua saúde.
+                    </p>
+</div>
+<button class="bg-primary/90 text-on-primary font-label-md py-4 px-10 rounded-lg hover:bg-primary transition-all uppercase text-[11px] tracking-widest font-bold">
+                    Conhecer mais sobre o Dr. Paulo
+                </button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Section 6: Nutrologia Integrada -->
+<section class="py-section-lg bg-surface">
+<div class="max-w-container-max-width mx-auto px-margin-mobile md:px-gutter text-center">
+<div class="max-w-2xl mx-auto mb-16">
+<h2 class="font-display-lg text-3xl text-primary mb-8 font-medium">Nutrologia Integrada</h2>
+<p class="font-body-lg text-on-surface-variant mb-6">
+                No Instituto Dela, a Nutrologia não atua de forma isolada.
+            </p>
+<p class="font-body-md text-on-surface-variant">
+                Quando indicado, o acompanhamento é construído em diálogo com Nutrição, Ginecologia, Estética, Dermatofuncional e Psicologia, para que as decisões façam sentido dentro de um cuidado mais amplo. A integração acontece com objetivo claro: alinhar condutas, evitar abordagens fragmentadas e acompanhar a saúde da mulher com mais consistência ao longo do tempo.
+            </p>
+</div>
+<div class="flex flex-wrap justify-center gap-3 mb-16">
+<span class="px-8 py-3 rounded-full bg-surface-container border border-outline-variant/30 text-primary font-label-md text-[11px] uppercase tracking-widest hover:border-brand-rose/40 transition-colors cursor-default">Nutrição</span>
+<span class="px-8 py-3 rounded-full bg-surface-container border border-outline-variant/30 text-primary font-label-md text-[11px] uppercase tracking-widest hover:border-brand-rose/40 transition-colors cursor-default">Ginecologia</span>
+<span class="px-8 py-3 rounded-full bg-surface-container border border-outline-variant/30 text-primary font-label-md text-[11px] uppercase tracking-widest hover:border-brand-rose/40 transition-colors cursor-default">Estética</span>
+<span class="px-8 py-3 rounded-full bg-surface-container border border-outline-variant/30 text-primary font-label-md text-[11px] uppercase tracking-widest hover:border-brand-rose/40 transition-colors cursor-default">Dermatofuncional</span>
+<span class="px-8 py-3 rounded-full bg-surface-container border border-outline-variant/30 text-primary font-label-md text-[11px] uppercase tracking-widest hover:border-brand-rose/40 transition-colors cursor-default">Psicologia</span>
+</div>
+<button class="text-primary font-label-md flex items-center gap-3 hover:gap-5 transition-all mx-auto uppercase text-[11px] tracking-[0.2em] font-bold group">
+            Conhecer todas as especialidades
+            <span class="material-symbols-outlined text-lg group-hover:rotate-45 transition-transform">arrow_upward</span>
+</button>
+</div>
+</section>
+
+<!-- Section 7: CTA Final -->
+<section class="py-section-lg bg-surface-container-highest/60 text-center border-y border-outline-variant/20">
+<div class="max-w-[700px] mx-auto px-margin-mobile">
+<span class="material-symbols-outlined text-brand-rose text-5xl mb-10 opacity-70">spa</span>
+<p class="font-display-lg text-2xl md:text-3xl text-primary mb-6 leading-relaxed text-balance italic font-light">
+            A consulta é o momento de entender o que está acontecendo e organizar o cuidado com mais clareza.
+        </p>
+<p class="font-body-md text-on-surface-variant mb-14">Nossa equipe está disponível para orientar o melhor caminho.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-5 mb-8">
+<button class="bg-primary text-on-primary font-label-md py-5 px-12 rounded-lg hover:bg-primary-container transition-all uppercase text-[11px] tracking-widest font-bold soft-shadow">
+                Agendar consulta
+            </button>
+<button class="bg-white border border-outline/20 text-primary font-label-md py-5 px-12 rounded-lg hover:bg-surface-container-low transition-all uppercase text-[11px] tracking-widest font-bold">
+                Falar no WhatsApp
+            </button>
+</div>
+<p class="font-body-md text-on-surface-variant/50 text-sm">Atendimento presencial e online · Barra da Tijuca, Rio de Janeiro</p>
+</div>
+</section>
+
+<!-- Footer -->
+<div class="py-10 bg-surface-dim text-center border-t border-outline-variant/10">
+<p class="font-body-md text-on-surface-variant/50 text-[10px] tracking-[0.3em] uppercase">
+        © 2024 Instituto Dela · Sofisticação e Ciência na Saúde Feminina
+    </p>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-12');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-[1000ms]', 'ease-out', 'opacity-0', 'translate-y-12');
+            observer.observe(el);
+        });
+    });
+</script>
+</body></html>
